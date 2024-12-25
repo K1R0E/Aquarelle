@@ -85,7 +85,7 @@ class Triangle extends Shape {
 }
 
 // Main program
-public class Main {
+public class Shape_Inheritance {
     public static void main(String[] args) {
         // Create instances of each shape
         Circle circle = new Circle(10, "Red");
