@@ -19,10 +19,11 @@ class FloweringTree implements Flower, Tree {
         System.out.println("The flowering tree grows.");
     }
 }
-    public class Plants {
-public static void main(String[] args) {
-    FloweringTree myTree = new FloweringTree();
-    myTree.bloom();
-    myTree.grow();
-  }
+public class Multiple_Inheritance_Plants {
+    public static void main(String[] args) {
+        FloweringTree myTree = new FloweringTree();
+        myTree.bloom();
+        myTree.grow();
+    }
 }
+
