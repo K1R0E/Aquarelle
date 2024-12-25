@@ -1,7 +1,7 @@
 package animall;
 
 
-public class Dog extends Animal {
+public class Polymorphism_Dog extends Animal {
     Dog(String name, String habitat){
         super(name, habitat);
     }
