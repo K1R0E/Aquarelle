@@ -35,7 +35,7 @@ class Ship {
      System.out.println("Cargo Capacity: " + cargoCapacity + " tons");
   }
 }
-   public class Main {
+public class Ship_Inheritance {
    public static void main(String[] args) {
 // Create an instance of CargoShip
      CargoShip cs = new CargoShip("BreakAway" , 25.5, 50000);
