@@ -1,0 +1,39 @@
+public class Pizzaa {
+    private String toppings;
+    private int diameterInches;
+    private double price;
+
+    // Constructor
+    public Pizzaa(String toppings, int diameterInches, double price) {
+        this.toppings = toppings;
+        this.diameterInches = diameterInches;
+        this.price = price;
+    }
+
+    // Getter and setter for toppings
+    public String getToppings() {
+        return toppings;
+    }
+
+    public void setToppings(String toppings) {
+        this.toppings = toppings;
+    }
+
+    // Getter and setter for diameterInches
+    public int getDiameterInches() {
+        return diameterInches;
+    }
+
+    public void setDiameterInches(int diameterInches) {
+        this.diameterInches = diameterInches;
+    }
+
+    // Getter and setter for price
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+}
