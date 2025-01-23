@@ -1,0 +1,66 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package guesstheanimalclues1;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Student
+ */
+public class Main {
+    public static void main(String[] args) {
+        String[] animals = {"cat", "dog", "elephant", "lion", "tiger"};
+
+        JOptionPane.showMessageDialog(null, "Welcome to Guess the Animal game!");
+
+        boolean playAgain = true;
+
+        while (playAgain) {
+           
+            int randomIndex = (int) (Math.random() * animals.length);
+            String animal = animals[randomIndex];
+
+            String clue = getClue(animal); 
+
+            JOptionPane.showMessageDialog(null, "Here's your clue: " + clue);
+
+            String guess = JOptionPane.showInputDialog("Enter your guess: ");
+
+            if (guess.equalsIgnoreCase(animal)) {
+                JOptionPane.showMessageDialog(null, "Congratulations! You guessed the animal correctly.");
+            } else {
+                JOptionPane.showMessageDialog(null, "Incorrect guess. The animal was " + animal);
+            }
+
+            int option = JOptionPane.showConfirmDialog(null, "Do you want to play again?", "Play Again", JOptionPane.YES_NO_OPTION);
+
+            if (option == JOptionPane.NO_OPTION) {
+                playAgain = false;
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "Thank you for playing!");
+    }
+
+   
+    public static String getClue(String animal) {
+        String clue = "";
+
+        
+        if (animal.equalsIgnoreCase("cat")) {
+            clue = "It's a small domesticated animal that says 'meow'.";
+        } else if (animal.equalsIgnoreCase("dog")) {
+            clue = "It's a loyal and friendly domesticated animal that says 'woof'.";
+        } else if (animal.equalsIgnoreCase("elephant")) {
+            clue = "It's a large animal with a long trunk and big ears.";
+        } else if (animal.equalsIgnoreCase("lion")) {
+            clue = "It's a majestic big cat known as the 'king of the jungle'.";
+        } else if (animal.equalsIgnoreCase("tiger")) {
+            clue = "It's a powerful striped big cat found in various habitats.";
+        }
+
+        return clue;
+    }
+}
